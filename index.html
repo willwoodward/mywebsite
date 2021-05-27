@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Materialize Stylesheets and JS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- Google Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Main Stylesheet and JS -->
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js"></script>
+
+        <title>Will Woodward</title>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class='no-shadows transparent sticky'>
+            <div class='row'>
+                <div class='col s1'>
+                    <a href='index.html'>
+                        <i class='large material-icons nav-icon center'>all_inclusive</i>
+                    </a>
+                </div>
+
+                <div onclick="darkMode('light')" class='col s1 offset-s8' >
+                    <i class='large material-icons nav-icon center'>brightness_1</i>
+                </div>
+
+                <div onclick="darkMode('dark')" class='col s1' >
+                    <i class='large material-icons nav-icon center'>brightness_3</i>
+                </div>
+
+                <div class='col s1' >
+                    <a href='menu.html'>
+                        <i class='large material-icons nav-icon center'>dehaze</i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Title -->
+        <section class='main'>
+
+            <div class='container'>
+                <h1 class='title'><span>Will</span> Woodward</h1>
+                <h2 class='title-subtitle'>Year 13 A Level Student</h2>
+            </div>
+        </section>
+
+        <!-- Main Page -->
+        <section class='content'>
+            <div class='row'>
+                <div class='col s3'>
+                </div>
+
+                <div class='col s1'>
+                </div>
+
+                <div class='col s8'>
+                    <div class='container'>
+
+                        <!-- Projects -->
+                        <div class='divider'></div>
+                        <a href='projects.html'>
+                            <h1 class='subtitle'>.projects<span class='blue'>()</span></h1>
+                        </a>
+                        <ul class='e'>
+                            <li class='list1'><a href='Projects\calculator.html'>Calculator</a></li>
+                            <li class='list1'><a href='hangman.html'>Hangman</a></li>
+                            <li class='list1'>Soduku Solver</li>
+                        </ul>
+
+                        <!-- Skills -->
+                        <div class='divider'></div>
+                        <h1 class='subtitle'>.skills<span class='blue'>()</span></h1>
+                        <div class='col s6'>
+                            <div class='row'>
+                                <div class='col s3 text'>
+                                    Python
+                                </div>
+                                <div class='col s6 offset-s2'>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='row e'>
+                                <div class='col s3 text'>
+                                    JavaScript
+                                </div>
+                                <div class='col s6 offset-s2'>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col s6'>
+                            <div class='row'>
+                                <div class='col s3 text'>
+                                    HTML
+                                </div>
+                                <div class='col s6 offset-s2'>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='row e'>
+                                <div class='col s3 text'>
+                                    CSS
+                                </div>
+                                <div class='col s6 offset-s2'>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 83%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="page-footer fd">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s5">
+                            <h5>Contact Information</h5>
+                            <p>You can find me on any of the links listed.</p>
+                        </div>
+                        <div class="col s2 offset-s1">
+                            <h5>Links</h5>
+                            <ul>
+                                <li><a href="#!">Link 1</a></li>
+                                <li><a href="#!">Link 2</a></li>
+                                <li><a href="#!">Link 3</a></li>
+                                <li><a href="#!">Link 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="col s2 offset-s2">
+                            <h5>Links</h5>
+                            <ul>
+                                <li><a href="#!">Link 1</a></li>
+                                <li><a href="#!">Link 2</a></li>
+                                <li><a href="#!">Link 3</a></li>
+                                <li><a href="#!">Link 4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                    © 2021
+                    <a class="grey-text text-lighten-4 right" href="#!">Will Woodward</a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </body>
+</html>

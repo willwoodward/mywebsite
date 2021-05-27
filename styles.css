@@ -1,0 +1,115 @@
+:root {
+    --darkBackground: rgb(23, 23, 23);
+    --darkText: #ffffff;
+    --progressBackground: rgb(53, 53, 53);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--darkBackground);
+    color: var(--darkText)
+}
+
+
+/* Navbar */
+.no-shadows {
+    box-shadow: none!important;
+}
+
+.centre {
+    align-content: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-icon {
+    color: var(--darkText);
+}
+
+.edge {
+    margin-right: 17px;
+}
+
+/* Title Section */
+.title {
+    padding-top: 250px;
+    font-size: 120px;
+}
+
+.title span {
+    background: linear-gradient(to top, #207f8b, #5fd1b3);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
+}
+
+.title-subtitle {
+    margin-bottom: 500px;
+}
+
+/* Main Section */
+.subtitle span.gold {
+    background: linear-gradient(to top, #bd9833, #DBB13B);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
+}
+
+.subtitle span.blue {
+    background: linear-gradient(to top, #207f8b, #5fd1b3);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
+}
+
+a {
+    color: var(--darkText);
+}
+
+.e {
+    padding-bottom: 1000px;
+}
+
+.list1 {
+    font-size: 20px;
+}
+
+.list1 a {
+    color: var(--darkText);
+}
+
+.row div.text {
+    font-size: 20px;
+}
+
+.progress {
+    background-color: var(--progressBackground);
+    margin-top: 14px;
+}
+
+/* Footer */
+.page-footer {
+    background-color: #207f8b;
+}
+
+.fd {
+    color: white;
+}
+
+.fd a {
+    color: white;
+}
