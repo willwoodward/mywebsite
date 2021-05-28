@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Reset Stylesheet -->
+        <link rel="stylesheet" href="styles.css">
         <!-- Materialize Stylesheets and JS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -22,21 +24,18 @@
         <nav class='no-shadows transparent sticky'>
             <div class='row'>
                 <div class='col s1'>
-                    <a href='/'>
+                    <a href='index.html'>
                         <i class='large material-icons nav-icon center'>all_inclusive</i>
                     </a>
                 </div>
 
-                <div onclick="darkMode('light')" class='col s1 offset-s8' >
-                    <i class='large material-icons nav-icon center'>brightness_1</i>
-                </div>
-
-                <div onclick="darkMode('dark')" class='col s1' >
-                    <i class='large material-icons nav-icon center'>brightness_3</i>
+                <div onclick="toggleDarkMode()" class='col s1 offset-s9 toggle' >
+                    <i class='large material-icons nav-icon center switch'>brightness_3</i>
+                    <i class='large material-icons nav-icon center swap'>brightness_1</i>
                 </div>
 
                 <div class='col s1' >
-                    <a href='/menu'>
+                    <a href='menu.html'>
                         <i class='large material-icons nav-icon center'>dehaze</i>
                     </a>
                 </div>
@@ -44,7 +43,7 @@
         </nav>
 
         <!-- Title -->
-        <section class='main'>
+        <section id='title'>
 
             <div class='container'>
                 <h1 class='title'><span>Will</span> Woodward</h1>
@@ -53,7 +52,7 @@
         </section>
 
         <!-- Main Page -->
-        <section class='content'>
+        <section id='main'>
             <div class='row'>
                 <div class='col s3'>
                 </div>
@@ -65,63 +64,67 @@
                     <div class='container'>
 
                         <!-- Projects -->
-                        <div class='divider'></div>
-                        <a href='projects.html'>
-                            <h1 class='subtitle'>.projects<span class='blue'>()</span></h1>
-                        </a>
-                        <ul class='e'>
-                            <li class='list1'><a href='Projects\calculator.html'>Calculator</a></li>
-                            <li class='list1'><a href='hangman.html'>Hangman</a></li>
-                            <li class='list1'>Soduku Solver</li>
-                        </ul>
+                        <section id='projects'>
+                            <div class='divider'></div>
+                            <a href='projects.html'>
+                                <h1 class='subtitle'>.projects<span class='blue'>()</span></h1>
+                            </a>
+                            <ul>
+                                <li class='list1'><a href='projects\calculator.html'>Calculator</a></li>
+                                <li class='list1'><a href='hangman.html'>Hangman</a></li>
+                                <li class='list1'>Soduku Solver</li>
+                            </ul>
+                        </section>
 
                         <!-- Skills -->
-                        <div class='divider'></div>
-                        <h1 class='subtitle'>.skills<span class='blue'>()</span></h1>
-                        <div class='col s6'>
-                            <div class='row'>
-                                <div class='col s3 text'>
-                                    Python
+                        <section id='skills'>
+                            <div class='divider'></div>
+                            <h1 class='subtitle'>.skills<span class='blue'>()</span></h1>
+                            <div class='col s6'>
+                                <div class='row'>
+                                    <div class='col s3 text'>
+                                        Python
+                                    </div>
+                                    <div class='col s6 offset-s2'>
+                                        <div class="progress">
+                                            <div class="determinate" style="width: 50%"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class='col s6 offset-s2'>
-                                    <div class="progress">
-                                        <div class="determinate" style="width: 50%"></div>
+                                <div class='row bottom'>
+                                    <div class='col s3 text'>
+                                        JavaScript
+                                    </div>
+                                    <div class='col s6 offset-s2'>
+                                        <div class="progress">
+                                            <div class="determinate" style="width: 80%"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class='row e'>
-                                <div class='col s3 text'>
-                                    JavaScript
+                            <div class='col s6'>
+                                <div class='row'>
+                                    <div class='col s3 text'>
+                                        HTML
+                                    </div>
+                                    <div class='col s6 offset-s2'>
+                                        <div class="progress">
+                                            <div class="determinate" style="width: 90%"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class='col s6 offset-s2'>
-                                    <div class="progress">
-                                        <div class="determinate" style="width: 80%"></div>
+                                <div class='row'>
+                                    <div class='col s3 text'>
+                                        CSS
+                                    </div>
+                                    <div class='col s6 offset-s2'>
+                                        <div class="progress">
+                                            <div class="determinate" style="width: 83%"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class='col s6'>
-                            <div class='row'>
-                                <div class='col s3 text'>
-                                    HTML
-                                </div>
-                                <div class='col s6 offset-s2'>
-                                    <div class="progress">
-                                        <div class="determinate" style="width: 90%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='row e'>
-                                <div class='col s3 text'>
-                                    CSS
-                                </div>
-                                <div class='col s6 offset-s2'>
-                                    <div class="progress">
-                                        <div class="determinate" style="width: 83%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>

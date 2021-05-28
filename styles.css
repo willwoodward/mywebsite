@@ -1,6 +1,8 @@
+/* All */
 :root {
     --darkBackground: rgb(23, 23, 23);
     --darkText: #ffffff;
+    --darkCardBackground: rgb(33, 33, 33);
     --progressBackground: rgb(53, 53, 53);
 }
 
@@ -17,37 +19,64 @@ body {
     color: var(--darkText)
 }
 
+a {
+    color: var(--darkText);
+}
+
+
 
 /* Navbar */
-.no-shadows {
+nav.no-shadows {
     box-shadow: none!important;
 }
 
-.centre {
-    align-content: center;
-}
-
-.sticky {
+nav.sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-.nav-icon {
+nav .toggle {
+    cursor: pointer;
+}
+
+nav .toggle i.switch {
+    visibility: visible;
+    transition: all 0.3 ease-in-out;
+    position: absolute;
+}
+
+nav .toggle i.swap {
+    visibility: hidden;
+    transition: all 0.3 ease-in-out;
+    position: absolute;
+}
+
+nav i.nav-icon {
     color: var(--darkText);
 }
 
-.edge {
+nav i.centre {
+    align-content: center;
+}
+
+nav.edge {
     margin-right: 17px;
 }
 
+
+
 /* Title Section */
-.title {
+#title {
+    padding-bottom: 1000px;
+}
+
+#title .title {
     padding-top: 250px;
     font-size: 120px;
 }
 
-.title span {
+#title .title span {
     background: linear-gradient(to top, #207f8b, #5fd1b3);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -55,12 +84,14 @@ body {
     -mo-text-fill-color: transparent;
 }
 
-.title-subtitle {
-    margin-bottom: 500px;
-}
+
 
 /* Main Section */
-.subtitle span.gold {
+#main {
+    padding-top: 100px;
+}
+
+#main span.gold {
     background: linear-gradient(to top, #bd9833, #DBB13B);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -68,7 +99,7 @@ body {
     -mo-text-fill-color: transparent;
 }
 
-.subtitle span.blue {
+#main span.blue {
     background: linear-gradient(to top, #207f8b, #5fd1b3);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -76,30 +107,32 @@ body {
     -mo-text-fill-color: transparent;
 }
 
-a {
-    color: var(--darkText);
+#main #projects .list1 {
+    font-size: 20px;
 }
 
-.e {
+#main #projects ul {
     padding-bottom: 1000px;
 }
 
-.list1 {
-    font-size: 20px;
+#main #skills {
+    padding-top: 100px;
 }
 
-.list1 a {
-    color: var(--darkText);
-}
-
-.row div.text {
-    font-size: 20px;
-}
-
-.progress {
+#main #skills .progress {
     background-color: var(--progressBackground);
     margin-top: 14px;
 }
+
+#main #skills .row div.text {
+    font-size: 20px;
+}
+
+#main #skills .bottom {
+    padding-bottom: 1000px;
+}
+
+
 
 /* Footer */
 .page-footer {
@@ -112,4 +145,41 @@ a {
 
 .fd a {
     color: white;
+}
+
+
+
+/* Projects Page */
+.card {
+    background-color: var(--darkCardBackground);
+}
+
+.card .container1 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.project-page {
+    margin-top: 200px;
+}
+
+.project .title {
+    padding-top: 5px;
+}
+
+.project .card h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.project .info {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    height: 200px;
 }
